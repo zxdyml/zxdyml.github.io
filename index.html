@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_hatdtfes2jcbx1or.css">
+	<link rel="stylesheet" href="./src/css/index.css">
+	<style>
+		#nav-box{background-color:#fbfbfb;height:90px;}
+		.nav{padding:30px 0;margin: 0 auto;width: 1066px;}
+		.nav-lf{float: left;}
+		.nav-lf img{width: 110px;}
+		.nav-lf p{display: inline-block;padding:2px 8px;font-size: 10px;border-left: 1px solid #ddd;height:40px;position: relative;top:0;line-height: 18px;color:#00a0e9;font-weight: bold;}
+		.nav-mid{margin:0 auto;border:1px solid #ccc;width: 450px;height: 30px;box-sizing:content-box;}
+		.nav-mid div{float: left;}
+		.nav-mid input{width: 280px;border:none;height: 30px;float: left;padding-left: 7px;outline:none;}
+		.icon-xiajiantou{font-size: 8px;}
+		.nav-mid button{border:none;height:30px;width: 80px;background-color:#0ab2e4;color:#fff;}
+		.xlk{float:left;
+			height: 30px;width: 90px;background-color: #f4f4f4;
+  			display: inline-block;
+  			text-align: center;line-height: 30px;font-size: 12px;
+		}
+		.nav-rg{float:right;width: 120px;height: 30px;background-color: #f8f8f8;border-radius:3px;line-height: 30px; font-size: 12px;padding:0 7px;border:1px solid #eee;}
+		.icon-gouwuche{font-size: 20px;float: left;padding-right: 5px;}
+		.nav-rg p{display: inline-block;}
+		.nav-rg span{font-size:17px;font-weight:bold; color: #ff002d;display: inline-block;width: 18px;text-align: center;}
+		.btn-box{margin: 0 auto;position: relative;}
+		.cen-btn{padding-top:40px;margin:0 auto 10px;width: 800px;}
+		/*.cen-cen{margin: 0 auto;}*/
+		.cen-btn li{height: 35px;width: 125px;background-color: #5dbf18;border-bottom: 5px solid #ffef03;margin-right: 5px;text-align:center;line-height: 30px;transform: skew(-20deg);}
+		.cen-btn li a{color:#eee;transform: skew(20deg);display: inline-block;text-shadow: 1px 1px 0px rgba(187,187,187,.3);}
+		.btnxz{background-color:#dbf7fc !important;}
+		.btnxz a{color:#0d61e8  !important;}
+		
+		.xkce{display: none;margin: 0 auto;}
+		.blk{display: block !important;}
+		.xkce-1-cen{height:220px;background-color: #fff;padding-top: 50px;border-bottom: 15px solid #5ebd1b;border-radius: 3px;box-shadow: 0 20px 30px rgba(100,100,100,.3);margin-bottom: 50px;}
+		.xkce-1-cen p img{position: absolute;top:77px;}
+		.sp1{left: 155px;}
+		.sp2{left: 892px;}
+		.cen-txt div{float:left;}
+		.txt-lf{padding-top: 20px;}
+		.txt-mid{font-size: 15px;color:#567498;text-align: center;padding:30px;}
+		.txt-mid span{font-weight: bold;font-size: 35px;color:#075eec;}
+		.txt-rg{font-size: 14px;line-height: 20px;padding-top: 20px;}
+		.txt-rg span{color:#0078ff;}
+		.txt-rg a{color:#0078ff; text-decoration: underline;}
+		.xkce-rk li{width: 165px;height: 220px;background-color: #fff;border-radius:4px;text-align: center;margin:0 0 77px 80px;box-shadow: 0 20px 30px rgba(100,100,100,.3);}
+		.xkce-rk-img {background:url(./src/images/idx1.png) no-repeat;width:110px;height: 110px;margin: 10px auto;}
+		.xkce-rk li div{color:#075eec;font-size: 16px;}
+		.xkce-rk li div span{font-weight: bold;font-size: 25px;}
+		.xkce-1-ig1{background-position: -18px 0;}
+		.xkce-1-ig2{background-position: -308px 0;}
+		.xkce-1-ig3{background-position: -598px 0;}
+		.xkce-title{color:#fff;text-align: center;}
+		.xkce-title p{color:#8ebcf9;}
+		.xkce-2-cjtj ul{margin: 40px 0;}
+		.xkce-2-cjtj li{width: 253px;height: 175px;background-color: #edf5ff;}
+		.xkce-2-cjtj-pa{padding:25px 0 0 20px;position: relative;}
+		.xkce-2-cjtj em{border-top: 2px solid #ffb80c;display: inline-block;width: 25px;position: relative;top:-10px;}
+		.xkce-2-cjtj p{color:#476990;}
+		.xkce-2-cjtj-pa i{position: absolute;font-style: normal;background:url(./src/images/hj.png);display: inline-block;width: 23px;height: 24px;;color:#edf5ff;top:0;left: 0;padding-left: 7px;}
+
+
+		.xkce-3-cjtj-pa i{position: absolute;font-style: normal;background:url(./src/images/hj1.png);display: inline-block;width: 23px;height: 24px;;color:#edf5ff;top:0;left: 0;padding-left: 7px;}
+		.xkce-3-cjtj-pa em{border-top: 2px solid #ffb80c;display: inline-block;width: 25px;position: relative;top:-10px;}
+		.xkce-3-cjtj-pa{padding:25px 0 0 20px;position: relative;}
+
+		.wid{width: 800px;margin: 0 auto;}
+
+		.uli{text-align: center;height: 20px;}
+		.uli span{font-size: 40px;position: relative;top:7px;}
+		.ulicl{color:#f6e128;}
+		.bt{display:block;width: 110px;height: 30px;background-color: #f6e22a;border-radius: 15px;text-align: center;border:1px solid #f6e22a;line-height: 30px;margin: 40px auto;color:#6c4d0a;}
+		.bt:active{background-color: #d7c204}
+		#xkce-foot{background:url(./src/images/idx2bj.jpg) no-repeat;height: 503px;background-size: 100%; display: none;}
+		.xkce-foot-box{width: 800px;margin: 0 auto;padding-top:120px;text-align: center;color:#0078ff;}
+		.xkce-foot-lf{width: 390px;float: left;}
+		.xkce-foot-rg{width: 390px;float:right;}
+		.xkce-foot-rg p{padding-bottom: 40px;}
+		.xkce-foot-lf p{padding-bottom: 40px;}
+		.xkce-foot-lf li{text-align: left;font-size: 15px;}
+		.xkce-foot-box span{display: block;padding-bottom: 70px;}
+
+		.sm-box{width: 100%;background-color: #edf5ff;position: relative;z-index: 2;}
+		.xkce-4-box{width: 1066px;background-color: #f8fbff;margin: 0 auto;padding:80px 80px 0 80px;}
+		.sm-tle{font-size: 40px;color:#ffa212;text-align: center;text-shadow: 0 3px 3px #dde4ed;padding-bottom:20px;}
+		.sm-cen{width: 800px;text-align: center;}
+		.sm-cen img{width: 900px;}
+		.sm-box-bj{width: 1366px;height:1330px;background-color: #edf5ff;position: absolute;left: -159px;top:85px; z-index: 1;}
+	</style>
+</head>
+<body>
+<div id="hd-box">
+	<div class="header">
+		<div class="hd-lf">
+			您好! 欢迎光临<span class="lse">链玻网!</span><a href=""><b class="iconfont icon-geren"></b> 登录</a><a href=""><b class="iconfont icon-bi"></b> 注册</a>
+		</div>
+		<div class="hd-rg">
+			<ul>
+				<li><a href="">帮助中心</a>|</li>
+				<li><a href="">我的消息</a>|</li>
+				<li><a href="">我的收藏</a>|</li>
+				<li><a href="">联系客服</a>|</li>
+				<li><a href="">网站导航</a>|</li>
+			</ul>
+			<div class="pdl"><b>客服电话：</b></div>
+			<div><span>400-806-6188</span> <b class="iconfont icon-dianhua"></b></div>
+		</div>
+	</div>
+</div>
+<div id="nav-box">
+	<div class="nav">
+		<div class="nav-lf">
+			<img src="./src/images/logo.jpg" alt="">
+			<p>玻璃行业o2o供应链服务 <br>交易撮合领导者</p>
+		</div>
+		<div class="nav-rg">
+			<b class="iconfont icon-gouwuche"></b> 购物车中<span>0</span>件
+		</div>
+		<div class="nav-mid cf" id="ssk">
+			<span class="xlk">产品 <b class="iconfont icon-xiajiantou"></b></span>
+			<form action="" >
+				<input type="text" id="sjk" placeholder="请输入你要搜索的产品">
+				<button>搜索</button>
+			</form>
+		</div>
+	</div>
+</div>
+<div id="cen-box">
+	<div class="cen cf">
+		<div class="cen-top">
+			<div id="pst1">链玻网</div>
+			<div id="pst2">12<span>月</span>28<span>日</span></div>
+			<div id="pst3">精品采购</div>
+			<div id="pst4">
+				12<span>月</span>28<span>日</span>
+				<p><img src="./src/images/jyr.png" alt=""></p>
+			</div>
+		</div>
+		<div class="btn-box">
+			<div class="cen-btn cf">
+				<ul>
+					<li id="wy1" class="btnxz"><a href="JavaScript:;">首页</a></li>
+					<li id="wy2"><a href="JavaScript:;">采购入口</a></li>
+					<li id="wy3"><a href="JavaScript:;">供应商入口</a></li>
+					<li id="wy4"><a href="JavaScript:;">金融授信</a></li>
+				</ul>
+			</div>
+			<div class="cen-cen">
+				<div class="xkce  blk">
+					<div class="wid">
+						<div class="xkce-1-cen">
+							<p>
+								<img src="./src/images/idxsp.png" alt="" class="sp1"><img src="./src/images/idxsp.png" alt="" class="sp2">
+							</p>
+							<div class="cen-txt">
+								<div class="txt-lf"><img src="./src/images/idx0.png" alt=""></div>
+								<div class="txt-mid"><span>活动介绍</span><br>ACTIVITY INTRODUCTION</div>
+								<div class="txt-rg">
+									<p>【活动时间】 :<span>2016年12月28日</span></p>
+									<p>【报名时间】 :2016年12月5日-2016年12月16日</p>
+									<p>【商品审核时间】 :2016年12月15日-2016年12月22日</p>
+									<p>【报名对象】 :面向玻璃行业的所有大中小企业</p>
+									<p>【报名方式】 :登录涟玻网官方网站<a href="">http://www.lbw18.com</a>参与报名</p>
+								</div>
+							</div>
+						</div>
+						<div class="xkce-rk">
+							<ul>
+								<li>
+									<p class="xkce-rk-img xkce-1-ig1"></p>
+									<div><span>采购商</span><br>入口></div>
+								</li>
+								<li>
+									<p class="xkce-rk-img xkce-1-ig2"></p>
+									<div><span>采购商</span><br>入口></div>
+								</li>
+								<li>
+									<p class="xkce-rk-img xkce-1-ig3"></p>
+									<div><span>采购商</span><br>入口></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="xkce">
+					<div class="wid">
+						<div class="xkce-1-cen">
+							<p>
+								<img src="./src/images/idxsp.png" alt="" class="sp1"><img src="./src/images/idxsp.png" alt="" class="sp2">
+							</p>
+							<div class="cen-txt">
+								<div class="txt-lf"><img src="./src/images/idx0.png" alt=""></div>
+								<div class="txt-mid"><span>活动介绍</span><br>ACTIVITY INTRODUCTION</div>
+								<div class="txt-rg">
+									<p>【活动时间】 :<span>2016年12月28日</span></p>
+									<p>【报名时间】 :2016年12月5日-2016年12月16日</p>
+									<p>【商品审核时间】 :2016年12月15日-2016年12月22日</p>
+									<p>【报名对象】 :面向玻璃行业的所有大中小企业</p>
+									<p>【报名方式】 :登录涟玻网官方网站<a href="">http://www.lbw18.com</a>参与报名</p>
+								</div>
+							</div>
+						</div>
+						<div class="xkce-2-cen">
+							<div class="xkce-title">
+								<h2>参加条件</h2>
+								<p>—— CONDITION OF PARTICIPATION ——</p>
+							</div>
+							<div class="xkce-2-cjtj">
+								<ul class="cf">
+									<li><img src="./src/images/kk1.jpg" alt=""></li>
+									<li class="xkce-2-cjtj-pa">
+										<i>2</i>
+										<b>经营领域</b><br>
+										<em></em>
+										<p>所有玻璃原片、深加工及下游<br>玻璃企业</p>
+									</li>
+									<li><img src="./src/images/kk3.jpg" alt=""></li>
+									<li class="xkce-2-cjtj-pa">
+										<i>1</i>
+										<b>企业资源</b><br>
+										<em></em>
+										<p>凡通过平台注册的企业皆可</p>
+									</li>
+									<li><img src="./src/images/kk2.jpg" alt=""></li>
+									<li class="xkce-2-cjtj-pa">
+										<i>3</i>
+										<b>优先权利</b><br>
+										<em></em>
+										<p>当参加企业过多时,链玻网优<br>先选择行业资格较深,信誉较<br>好的企业进行合作</p>
+									</li>
+								</ul>
+							</div>
+							<a href="JavaScript:;" class="bt">立即报名</a>
+							<div class="xkce-title">
+								<h2>采购商品条件</h2>
+								<p>—— GOODS ENTRY CONDITIONS ——</p>
+							</div>
+							<p class="uli ulicl"><span>·</span>采购商必须提前一周向平台提交采购商品的详细价格申请</p>
+							<a href="JavaScript:;" class="bt">立即报名</a>
+						</div>
+					</div>
+				</div>
+				<div class="xkce">
+					<div class="wid">
+						<div class="xkce-1-cen">
+							<p>
+								<img src="./src/images/idxsp.png" alt="" class="sp1"><img src="./src/images/idxsp.png" alt="" class="sp2">
+							</p>
+							<div class="cen-txt">
+								<div class="txt-lf"><img src="./src/images/idx0.png" alt=""></div>
+								<div class="txt-mid"><span>活动介绍</span><br>ACTIVITY INTRODUCTION</div>
+								<div class="txt-rg">
+									<p>【活动时间】 :<span>2016年12月28日</span></p>
+									<p>【报名时间】 :2016年12月5日-2016年12月16日</p>
+									<p>【商品审核时间】 :2016年12月15日-2016年12月22日</p>
+									<p>【报名对象】 :面向玻璃行业的所有大中小企业</p>
+									<p>【报名方式】 :登录涟玻网官方网站<a href="">http://www.lbw18.com</a>参与报名</p>
+								</div>
+							</div>
+						</div>
+						<div class="xkce-title">
+							<h2>参加条件</h2>
+							<p>—— CONDITION OF PARTICIPATION ——</p>
+						</div>
+						<div class="xkce-2-cjtj">
+							<ul class="cf">
+								<li><img src="./src/images/kk1.jpg" alt=""></li>
+								<li class="xkce-2-cjtj-pa">
+									<i>2</i>
+									<b>经营领域</b><br>
+									<em></em>
+									<p>所有玻璃原片、深加工及下游<br>玻璃企业</p>
+								</li>
+								<li><img src="./src/images/kk3.jpg" alt=""></li>
+								<li class="xkce-2-cjtj-pa">
+									<i>1</i>
+									<b>企业资源</b><br>
+									<em></em>
+									<p>凡通过平台注册的企业皆可</p>
+								</li>
+								<li><img src="./src/images/kk2.jpg" alt=""></li>
+								<li class="xkce-2-cjtj-pa">
+									<i>3</i>
+									<b>优先权利</b><br>
+									<em></em>
+									<p>当参加企业过多时,链玻网优<br>先选择行业资格较深,信誉较<br>好的企业进行合作</p>
+								</li>
+							</ul>
+						</div>
+						<a href="JavaScript:;" class="bt">立即报名</a>
+						<div class="xkce-title">
+							<h2>商品入驻条件</h2>
+							<p>—— GOODS ENTRY CONDITIONS ——</p>
+						</div>
+						<div class="xkce-2-cjtj">
+							<ul class="cf">
+								<li class="xkce-3-cjtj-pa">
+									<i>2</i>
+									<b>经营领域</b><br>
+									<em></em>
+									<p>所有玻璃原片、深加工及下游<br>玻璃企业</p>
+								</li>
+								<li><img src="./src/images/kk1.jpg" alt=""></li>
+								<li class="xkce-3-cjtj-pa">
+									<i>1</i>
+									<b>企业资源</b><br>
+									<em></em>
+									<p>凡通过平台注册的企业皆可</p>
+								</li>
+								<li><img src="./src/images/kk3.jpg" alt=""></li>
+								<li class="xkce-3-cjtj-pa">
+									<i>3</i>
+									<b>优先权利</b><br>
+									<em></em>
+									<p>当参加企业过多时,链玻网优<br>先选择行业资格较深,信誉较<br>好的企业进行合作</p>
+								</li>
+								<li><img src="./src/images/kk2.jpg" alt=""></li>
+							</ul>
+						</div>
+						<a href="JavaScript:;" class="bt">立即报名</a>
+					</div>
+				</div>
+				<div class="xkce">
+					<div class="sm-box-bj"></div>
+					<div class="sm-box ">
+						<div class="xkce-4-box">
+							<div class="sm-tle">金融授信</div>
+							<div class="sm-cen">
+								<img src="./src/images/idx4.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="xkce-foot">
+		<div class="xkce-foot-box">
+			<h1>发票问题</h1>
+		  	<span>·采购商必须提前一周向平台提交采购商品的详细价格申请</span>
+		  	<div class="xkce-foot-lf">
+				<h1>活动规则</h1>
+				<p>—— ACTIVITY RULES ——</p>
+				<ol>
+					<li>为保证活动的公平性,所有参与活动的采购商必须与平台签订采购协议;</li>
+					<li>本次活动最终解释权归涟玻网(www.lbw18.com)所有。</li>
+				</ol>
+		  	</div>
+		  	<div class="xkce-foot-rg">
+				<h1>活动流程</h1>
+				<p>—— THE PGOCESS ——</p>
+				<ol>
+					<li>进入活动页面,报名注册,点击提交资料;</li>
+					<li>提交入驻商品及价格,等待平台审核;</li>
+					<li>审核通过,进入采购环节</li>
+				</ol>
+		  	</div>
+		</div>
+	</div>
+</div>
+<div id="foot-box">
+	<div class="foot cf">
+		<div class="foot-top cf">
+			<div class="foot-top-lf">
+				<div class="foot-top-lf-top">
+					<b class="iconfont icon-dianhua-copy-copy"></b>
+					<p><span>400-806-6188</span><br><em>热线服务</em></p>
+				</div>
+				<div class="foot-top-lf-bt"><img src="./src/images/lbg.jpg" alt=""></div>
+			</div>
+			<div class="foot-top-mid">
+				<table>
+					<tr>
+						<th class="iconfont icon-gouwuche"></th>
+						<th class="pdr">采购指南</th>
+						<th class="iconfont icon-huoche"></th>
+						<th class="pdr">商家指南</th>
+						<th class="iconfont icon-huida"></th>
+						<th class="pdr">常见问题</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td>如何发布采购信息</td>
+						<td></td>
+						<td>如何管理店铺</td>
+						<td></td>
+						<td>如何注册成为会员</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>如何管理采购订单</td>
+						<td></td>
+						<td>如何管理销售订单</td>
+						<td></td>
+						<td>如何管理子账号</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>如何快速找货源</td>
+						<td></td>
+						<td>如何快速找交易</td>
+						<td></td>
+						<td>如何升级成为企业会员</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>如何确认订单和提货</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>如何修改密码</td>
+					</tr>
+				</table>
+			</div>
+			<div class="foot-top-rg">
+				<img src="./src/images/ewm.jpg" alt="">
+				<p>关注"链玻网"微信公众账号</p>
+			</div>
+		</div>
+		<div class="foot-bt cf">
+			<div class="foot-bt-lf">
+				<a href="">关于我们</a>|<a href="">法律声明</a>|<a href="">诚聘英才</a>|<a href="">联系我们</a>|<a href="">友情链接</a>| <br>
+				ICP备案号：粤ICP备16022836号-1 <br>
+				Copyright©2016-2016深圳市前海链贝互联网科技有限公司 版权所有
+			</div>
+			<div class="foot-bt-rg">
+				<img src="./src/images/wjdh.jpg" alt="">
+				<img src="./src/images/kxwz.jpg" alt="">
+				<img src="./src/images/cxwz.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+	$('#ssk').click(function(){
+		$(this).css({
+			'border':'1px solid #0ab2e4',
+			'box-shadow':' 0 0 2px #0ab2e4'
+		})
+	});
+	$('#sjk').blur(function(){
+		$('#ssk').css({
+			'box-shadow':'none',
+			'border':'1px solid #ccc'
+		})
+	});
+	$('.cen-btn li').click(function(){
+
+		$(this).addClass('btnxz').siblings().removeClass('btnxz');
+		var idx = $(this).index();
+		$('.xkce').eq(idx).addClass('blk').siblings().removeClass('blk');
+	});
+	
+	$('#wy2,#wy3').click(function(){
+		$('#xkce-foot').addClass('blk');
+	});
+	$('#wy1,#wy4').click(function(){
+		$('#xkce-foot').removeClass('blk')
+	});
+}());
+</script>
+</body>
+</html>

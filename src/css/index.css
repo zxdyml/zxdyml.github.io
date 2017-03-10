@@ -1,0 +1,46 @@
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: "Microsoft Yahei";}
+body{width: 1349px;color:#777;}
+a{text-decoration: none;color:#777;}
+ul li{list-style-type: none;}
+.cf:after{content:"";display: table;clear:both;}
+.cf{zoom:1;}
+#hd-box{background-color:#f4f4f4;height: 30px;border-bottom:1px solid #ccc;}
+.header{line-height: 30px;font-size: 10px;width: 1066px;margin: 0 auto;}
+.hd-lf{float: left;}
+.lse{color:#065deb;}
+.hd-lf a{padding-left: 15px;display: inline-block;}
+.hd-rg{float: right;}
+.hd-rg ul,li{float: left;}
+.hd-rg li a{padding:0 5px;display: inline-block;}
+.hd-rg div{float:left;color: #666;}
+.hd-rg span{font-size:18px;color:#f60;font-weight: bold;}
+.pdl{padding-left:20px;}
+.icon-dianhua{color: #888;}
+
+#cen-box{background: url(../images/bjt.jpg) #0e65f2 no-repeat;background-size: 1366px;}
+.cen{margin: 0 auto;width: 1066px;}
+.cen-top{height: 430px;position: relative;}
+#pst1{color:#fff;position: absolute;left: 186px;top:0px;font-size:35px;}
+#pst2{color:#fffc0f;font-size:25px;position: absolute;left: 488px;top:110px;}
+#pst2 span{font-size: 15px;}
+#pst3{color:#001b68;font-size: 20px;position: absolute;left: 681px;top:128px;transform: rotate(30deg);}
+#pst4{color:#fff;font-size: 17px;text-align: center;position: absolute;left: 448px;top:286px;text-shadow: 0 0 5px  #021d67;}
+#pst4 span{font-size:12px;}
+#pst4 img{width: 190px;}
+#foot-box{background-color: #dbdbdb;}
+.foot{width: 1066px;margin: 0 auto;}
+.foot-top{border-bottom: 1px solid #ccc;padding:25px 0 40px;}
+.icon-dianhua-copy-copy{font-size:40px;}
+.foot-top-lf{float: left;}
+.foot-top-lf-top p{display: inline-block;font-size: 18px;line-height: 15px;}
+.foot-top-lf-top p em{font-style:normal; color:#aaa;font-size: 12px;}
+.foot-top-lf-bt img{width: 150px;padding-top:30px;}
+.foot-top-mid{display: inline-block;padding-left: 100px;}
+.foot-top-mid .iconfont{font-size: 20px;}
+.pdr{padding-right: 70px;}
+td{font-size: 12px;height: 20px;}
+.foot-top-rg{float: right;text-align:center;font-size: 12px;padding-right: 50px;}
+.foot-top-rg img{width: 150px;}
+.foot-bt{padding:25px 0 50px;}
+.foot-bt-lf{font-size: 12px;line-height: 20px;float: left;}
+.foot-bt-rg{float: right;}
